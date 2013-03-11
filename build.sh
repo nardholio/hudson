@@ -148,6 +148,22 @@ repo sync -d -c > /dev/null
 check_result "repo sync failed."
 echo Sync complete.
 
+if [ ! -z "$CHERRIES" ]
+  echo "cherry picking..."
+  for CHERRY in $CHERRIES; do 
+    PROJECT=`echo $CHERRY | cut -d'/' -f2`
+    GITHUBUSER=`echo $CHERRY | cut -d'/' -f1`
+    COMMIT=`echo $CHERRY | cut -d'/' -f4`
+    SUBDIR=`echo $PROJECT | sed 's/android_//g' | sed 's#_#/#g'`
+    echo $PROJECT $GITHUBUSER $COMMIT $SUBDIR
+    cd $SUBDIR
+    git fetch git://github.com/$GITHUBUSER/$PROJECT.git
+    git cherry-pick $COMMIT
+    cd $WORKSPACE/$JENKINS_BUILD_DIR
+  done
+  echo "Cherry picking done."
+fi
+
 if [ -f $WORKSPACE/hudson/$REPO_BRANCH-setup.sh ]
 then
   $WORKSPACE/hudson/$REPO_BRANCH-setup.sh

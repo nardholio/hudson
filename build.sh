@@ -148,7 +148,7 @@ repo sync -d -c > /dev/null
 check_result "repo sync failed."
 echo Sync complete.
 
-if [ ! -z "$CHERRIES" ]
+if [ ! -z "$CHERRIES" ]; then
   echo "cherry picking..."
   for CHERRY in $CHERRIES; do 
     PROJECT=`echo $CHERRY | cut -d'/' -f2`

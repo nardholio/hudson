@@ -234,9 +234,9 @@ then
   fi
 fi
 
-if [ ! "$(ccache -s|grep -E 'max cache size'|awk '{print $4}')" = "100.0" ]
+if [ ! "$(ccache -s|grep -E 'max cache size'|awk '{print $4}')" = "15.0" ]
 then
-  ccache -M 100G
+  ccache -M 15G
 fi
 
 WORKSPACE=$WORKSPACE LUNCH=$LUNCH sh $WORKSPACE/hudson/changes/buildlog.sh 2>&1

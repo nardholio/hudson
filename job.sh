@@ -11,7 +11,7 @@ export WORKSPACE=$PWD
 
 if [ ! -d hudson ]
 then
-  git clone git://github.com/infernix/hudson.git
+  git clone git://github.com/TeamApexQ/hudson.git
 fi
 
 cd hudson

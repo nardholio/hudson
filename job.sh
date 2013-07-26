@@ -8,10 +8,11 @@ cd $WORKSPACE
 mkdir -p ../android
 cd ../android
 export WORKSPACE=$PWD
+rm -rf hudson
 
 if [ ! -d hudson ]
 then
-  git clone git://github.com/TeamApexQ/hudson.git -b cm-10.1
+  git clone git://github.com/nardholio/hudson.git
 fi
 
 cd hudson

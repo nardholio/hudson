@@ -8,7 +8,6 @@ cd $WORKSPACE
 mkdir -p ../android
 cd ../android
 export WORKSPACE=$PWD
-rm -rf hudson
 
 if [ ! -d hudson ]
 then

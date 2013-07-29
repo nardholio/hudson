@@ -9,5 +9,7 @@
  <project name="CyanogenMod/android_device_samsung_d2-common" path="device/samsung/d2-common" remote="github" />
  <remove-project name="CyanogenMod/android_frameworks_base" />
  <project name="nardholio/android_frameworks_base" path="frameworks/base" remote="github" revision="patch-1" />
+ <remove-project name="CyanogenMod/android_hardware_qcom_display-caf" />
+ <project name="nardholio/android_hardware_qcom_display-caf" path="hardware/qcom/display-caf" remote="github" revision="patch-1" />
 </manifest>
 

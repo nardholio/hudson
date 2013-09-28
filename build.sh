@@ -144,7 +144,7 @@ cat .repo/local_manifests/dyn-$REPO_BRANCH.xml
 rm -rf kernel/*
 
 echo Syncing...
-repo sync -d -c -f
+repo sync -d -c
 #check_result "repo sync failed."
 echo Sync complete.
 

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
  <project name="CyanogenMod/android_packages_apps_SamsungServiceMode" path="packages/apps/SamsungServiceMode" remote="github" />
- <project name="CyanogenMod/android_device_samsung_apexqtmo" path="device/samsung/apexqtmo" remote="github" revision="cm-10.2" />
+ <project name="nardholio/android_device_samsung_apexqtmo" path="device/samsung/apexqtmo" remote="github" revision="cm-10.2" />
  <project name="CyanogenMod/android_device_samsung_d2att" path="device/samsung/d2att" remote="github" revision="cm-10.2" />
  <project name="CyanogenMod/android_device_samsung_d2spr" path="device/samsung/d2spr" remote="github" revision="cm-10.2" />
  <project name="CyanogenMod/android_device_samsung_d2vzw" path="device/samsung/d2vzw" remote="github" revision="cm-10.2" />

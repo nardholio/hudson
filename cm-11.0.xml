@@ -1,16 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
- <project name="CyanogenMod/android_device_samsung_apexqtmo" path="device/samsung/apexqtmo" remote="github" revision="cm-10.2" />
- <project name="CyanogenMod/android_device_samsung_d2att" path="device/samsung/d2att" remote="github" revision="cm-10.2" />
- <project name="CyanogenMod/android_device_samsung_d2spr" path="device/samsung/d2spr" remote="github" revision="cm-10.2" />
- <project name="CyanogenMod/android_device_samsung_d2vzw" path="device/samsung/d2vzw" remote="github" revision="cm-10.2" />
- <project name="TheMuppets/proprietary_vendor_samsung" path="vendor/samsung" remote="github" revision="cm-10.2" />
- <project name="TeamAegis2/android_kernel_samsung_d2" path="kernel/samsung/d2" remote="github" revision="cm-10.2" />
- <project name="CyanogenMod/android_device_samsung_msm8960-common" path="device/samsung/msm8960-common" remote="github" revision="cm-10.2" />
- <project name="CyanogenMod/android_device_samsung_qcom-common" path="device/samsung/qcom-common" remote="github" revision="cm-10.2" />
- <project name="CyanogenMod/android_device_samsung_d2-common" path="device/samsung/d2-common" remote="github" revision="cm-10.2" />
- <project name="CyanogenMod/android_hardware_samsung" path="hardware/samsung" remote="github" revision="cm-10.2" />
- <remove-project name="platform/prebuilts/sdk" />
- <project path="prebuilts/sdk" name="platform/prebuilts/sdk" remote="aosp" revision="kitkat-dev" groups="pdk" />
+
 </manifest>
 

@@ -144,8 +144,8 @@ cat .repo/local_manifests/dyn-$REPO_BRANCH.xml
 rm -rf kernel/*
 
 echo Syncing...
-repo sync -d -c
-#check_result "repo sync failed."
+repo sync -d -c > /dev/null
+check_result "repo sync failed."
 echo Sync complete.
 
 if [ ! -z "$CHERRIES" ]; then
@@ -275,13 +275,15 @@ else
 fi
 
 echo "$REPO_BRANCH-$CORE_BRANCH$RELEASE_MANIFEST" > .last_branch
-
+echo "UPDATING API"
+make update-api
 time mka bacon recoveryzip recoveryimage checkapi
 check_result "Build failed."
 
 for f in $(ls $OUT/cm-*.zip*)
 do
-  ln $f $WORKSPACE/archive/$(basename $f)
+  targetf=`basename $f | sed "s/.zip$/-${BUILD_NO}.zip/g"`
+  ln $f $WORKSPACE/archive/$targetf
 done
 if [ -f $OUT/utilties/update.zip ]
 then

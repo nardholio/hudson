@@ -115,6 +115,7 @@ check_result "repo init failed."
 
 # make sure ccache is in PATH
 echo "Repo branch: $REPO_BRANCH"
+mkdir ~/.kk_ccache
 if [[ "$REPO_BRANCH" =~ "kitkat" || $REPO_BRANCH =~ "cm-11" || $REPO_BRANCH =~ "cm-11.0" ]]
  then
  export PATH="$PATH:/opt/local/bin/:$PWD/prebuilts/misc/$(uname|awk '{print tolower($0)}')-x86/ccache"

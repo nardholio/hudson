@@ -277,7 +277,8 @@ if [ $TIME_SINCE_LAST_CLEAN -gt "24" -o $CLEAN = "true" ]
 then
   echo "Cleaning!"
   touch .clean
-  make clobber
+  rm -rf /var/lib/jenkins/jobs/apexq-nardholio/android/cm-11.0/out
+  echo "So fresh, so clean"
 else
   echo "Skipping clean: $TIME_SINCE_LAST_CLEAN hours since last clean."
 fi

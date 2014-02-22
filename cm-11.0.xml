@@ -9,7 +9,7 @@
 <project name="CyanogenMod/android_device_samsung_d2lte" path="device/samsung/d2lte" remote="github" />
 <project name="TeamApexQ/android_kernel_samsung_d2" path="kernel/samsung/d2" remote="github" revision="nardtest2" />
 <project name="CyanogenMod/android_hardware_samsung" path="hardware/samsung" remote="github" />
-<project name="xplodwild/android_packages_apps_Focal" path="packages/apps/Focal" remote="github" />
-<project name="xplodwild/android_external_Focal" path="external/Focal" remote="github" />
+<project name="xplodwild/android_packages_apps_Focal" path="packages/apps/Focal" remote="github" revision="master" />
+<project name="xplodwild/android_external_Focal" path="external/Focal" remote="github" revision="master" />
 </manifest>
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-<project name="TheMuppets/proprietary_vendor_samsung" path="vendor/samsung" revision="cm-11.0" />
+<project name="invisiblek/proprietary_vendor_samsung" path="vendor/samsung" revision="gps" />
 <project name="TheMuppets/proprietary_vendor_asus" path="vendor/asus" revision="cm-11.0" />
 <project name="CyanogenMod/android_device_samsung_apexqtmo" path="device/samsung/apexqtmo" remote="github" />
 <project name="CyanogenMod/android_device_samsung_qcom-common" path="device/samsung/qcom-common" remote="github" />

@@ -10,6 +10,6 @@
 <project name="samsung-msm/android_kernel_samsung_msm8960" path="kernel/samsung/d2" remote="github" revision="cm-11.0" />
 <project name="CyanogenMod/android_hardware_samsung" path="hardware/samsung" remote="github" />
 <remove-project name="CyanogenMod/android_hardware_qcom_display-caf" />
-<project path="hardware/qcom/display-caf" name="samsung-msm/android_hardware_display-caf" remote="github" revision="cm-11.0"/>
+<project path="hardware/qcom/display-caf" name="samsung-msm/android_hardware_qcom_display-caf" remote="github" revision="cm-11.0"/>
 </manifest>
 

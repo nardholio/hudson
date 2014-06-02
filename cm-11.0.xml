@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-<project name="samsung-msm/proprietary_vendor_samsung" path="vendor/samsung" revision="cm-11.0" />
+<project name="TheMuppets/proprietary_vendor_samsung" path="vendor/samsung" revision="cm-11.0" />
 <project name="TheMuppets/proprietary_vendor_asus" path="vendor/asus" revision="cm-11.0" />
 <project name="CyanogenMod/android_device_samsung_apexqtmo" path="device/samsung/apexqtmo" remote="github" />
 <project name="CyanogenMod/android_device_samsung_qcom-common" path="device/samsung/qcom-common" remote="github" />
 <project name="CyanogenMod/android_device_qcom_common" path="device/qcom/common" remote="github" />
 <project name="CyanogenMod/android_device_samsung_msm8960-common" path="device/samsung/msm8960-common" revision="cm-11.0" />
 <project name="CyanogenMod/android_device_samsung_d2lte" path="device/samsung/d2lte" remote="github" />
-<project name="samsung-msm/android_kernel_samsung_msm8960" path="kernel/samsung/d2" remote="github" revision="cm-11.0" />
+<project name="CyanogenMod/android_kernel_samsung_msm8960" path="kernel/samsung/d2" remote="github" revision="cm-11.0" />
 <project name="CyanogenMod/android_hardware_samsung" path="hardware/samsung" remote="github" />
 </manifest>
 
